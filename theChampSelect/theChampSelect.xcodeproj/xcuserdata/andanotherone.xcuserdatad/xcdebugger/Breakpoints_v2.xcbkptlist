@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "theChampSelect/AddNewViewController.swift"
+            timestampString = "481730469.48772"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AddNewViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "theChampSelect.AddNewViewController.nameTf.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "theChampSelect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andanotherone/Desktop/gitPortfolio/theChampSelect/theChampSelect/AddNewViewController.swift"
+                  timestampString = "481731443.684218"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "theChampSelect.AddNewViewController.nameTf.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "theChampSelect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andanotherone/Desktop/gitPortfolio/theChampSelect/theChampSelect/AddNewViewController.swift"
+                  timestampString = "481731443.744716"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "theChampSelect.AddNewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; theChampSelect.AddNewViewController"
+                  moduleName = "theChampSelect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andanotherone/Desktop/gitPortfolio/theChampSelect/theChampSelect/AddNewViewController.swift"
+                  timestampString = "481731443.745002"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "theChampSelect.AddNewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;theChampSelect.AddNewViewController&gt;"
+                  moduleName = "theChampSelect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andanotherone/Desktop/gitPortfolio/theChampSelect/theChampSelect/AddNewViewController.swift"
+                  timestampString = "481731443.745229"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
