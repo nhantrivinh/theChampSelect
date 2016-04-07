@@ -21,8 +21,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        
-        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -63,6 +61,48 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } catch let err as NSError {
             print(err.debugDescription)
         }
+    }
+    
+    // Segue over to detailed view
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showDetailsSegue" {
+            if let cell = sender as? ChampionTableViewCell, row = tableView.indexPathForCell(cell)?.row, detailVC = segue.destinationViewController as? DetailedViewController {
+                detailVC.champion = champions[row]
+            }
+        }
+    }
+    
+    // Remove movie by swiping
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            
+            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            context.deleteObject(champions[indexPath.row] as NSManagedObject)
+            champions.removeAtIndex(indexPath.row)
+            
+            do {
+                try context.save()
+            } catch {}
+            
+            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.reloadData()
+            
+        }
+    }
+    
+    // Row selection styling
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    
+    //Status Bard Hide
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 
 

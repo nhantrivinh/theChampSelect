@@ -17,6 +17,7 @@
 		453C7F011CB6878600A3AA28 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C7F001CB6878600A3AA28 /* AddNewViewController.swift */; };
 		453C7F051CB6AFAB00A3AA28 /* Champion+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C7F031CB6AFAB00A3AA28 /* Champion+CoreDataProperties.swift */; };
 		453C7F061CB6AFAB00A3AA28 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C7F041CB6AFAB00A3AA28 /* Champion.swift */; };
+		453C7F091CB6C62F00A3AA28 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C7F081CB6C62F00A3AA28 /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		453C7F001CB6878600A3AA28 /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 		453C7F031CB6AFAB00A3AA28 /* Champion+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Champion+CoreDataProperties.swift"; path = "../Champion+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		453C7F041CB6AFAB00A3AA28 /* Champion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Champion.swift; path = ../Champion.swift; sourceTree = "<group>"; };
+		453C7F081CB6C62F00A3AA28 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				453C7EDB1CB61DBC00A3AA28 /* ViewController.swift */,
 				453C7F001CB6878600A3AA28 /* AddNewViewController.swift */,
+				453C7F081CB6C62F00A3AA28 /* DetailedViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				453C7EDC1CB61DBC00A3AA28 /* ViewController.swift in Sources */,
 				453C7EFF1CB67A7200A3AA28 /* ChampionTableViewCell.swift in Sources */,
+				453C7F091CB6C62F00A3AA28 /* DetailedViewController.swift in Sources */,
 				453C7F061CB6AFAB00A3AA28 /* Champion.swift in Sources */,
 				453C7EE21CB61DBC00A3AA28 /* theChampSelect.xcdatamodeld in Sources */,
 				453C7F011CB6878600A3AA28 /* AddNewViewController.swift in Sources */,

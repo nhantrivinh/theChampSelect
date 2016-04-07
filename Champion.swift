@@ -20,8 +20,11 @@ class Champion: NSManagedObject {
     }
     
     func getChampionImage() -> UIImage {
-        let img = UIImage(data: self.image!)!
-        return img
+        if let img = UIImage(data: self.image!) {
+            return img
+        } else {
+            return UIImage()
+        }
     }
 
 }

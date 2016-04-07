@@ -53,13 +53,15 @@ class AddNewViewController: UIViewController, UIImagePickerControllerDelegate, U
     
 
     @IBAction func createOnPressed(sender: AnyObject) {
-        if let title = nameTf.text where title != "", let image = champ_image.image where image != "" {
+        if let title = nameTf.text where title != "", let image = champ_image.image where image != "", let desc = howToCruise.text where desc != "" {
             let app = UIApplication.sharedApplication().delegate as! AppDelegate
             let context = app.managedObjectContext
             let entity = NSEntityDescription.entityForName("Champion", inManagedObjectContext: context)!
             let champion = Champion(entity: entity, insertIntoManagedObjectContext: context)
             
             champion.name = title
+            champion.howToWin = desc
+            champion.setChampionImage(image)
             context.insertObject(champion)
             
             do {
@@ -69,7 +71,8 @@ class AddNewViewController: UIViewController, UIImagePickerControllerDelegate, U
             }
             
             lbl_error_rpt.text = ""
-            self.navigationController?.popViewControllerAnimated(true)
+            
+            dismissViewControllerAnimated(true, completion: nil)
         } else {
             lbl_error_rpt.text = "Incomplete Data"
         }
