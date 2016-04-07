@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
+        let champ1 = Champion(entity: "Champion", insertIntoManagedObjectContext: <#T##NSManagedObjectContext?#>)
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

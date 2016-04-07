@@ -26,5 +26,7 @@ class Champion: NSManagedObject {
             return UIImage()
         }
     }
+    
+    
 
 }
